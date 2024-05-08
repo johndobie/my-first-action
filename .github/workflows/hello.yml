@@ -14,7 +14,7 @@ jobs:
      - run: Get-Date
       
   macos:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
     -  run: date
     
