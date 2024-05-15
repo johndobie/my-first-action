@@ -1,0 +1,13 @@
+name: first
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.so}}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]   
+    steps:
+     - run: date  
+  
